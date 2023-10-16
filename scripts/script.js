@@ -14,19 +14,19 @@ function startCalculation() {
 }
 
 function resetBorderAndLabelColors(dayInputEl, monthInputEl, yearInputEl) {
-  // resets border color to default state
+ 
   dayInputEl.style.borderColor = BORDER_COLOR;
   monthInputEl.style.borderColor = BORDER_COLOR;
   yearInputEl.style.borderColor = BORDER_COLOR;
 
-  // reset label color to default state
+  
   labelsEl[0].style.color = LABEL_COLOR;
   labelsEl[1].style.color = LABEL_COLOR;
   labelsEl[2].style.color = LABEL_COLOR;
 }
 
 function addBorderAndLabelColors() {
-  // accessing all the input elements
+  
   const dayInputEl = document.getElementById("day");
   const monthInputEl = document.getElementById("month");
   const yearInputEl = document.getElementById("year");
@@ -45,7 +45,7 @@ function isFieldEmpty() {
 
   resetBorderAndLabelColors(dayInputEl, monthInputEl, yearInputEl);
 
-  // hiding all the error messages
+  
   document.querySelector(".empty-d-error").classList.add("hide");
   document.querySelector(".empty-m-error").classList.add("hide");
   document.querySelector(".empty-y-error").classList.add("hide");
